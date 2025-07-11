@@ -1,0 +1,5 @@
+(define calc-bmi
+  (lambda (kg cm) (/ kg(expt(* cm 100) 2)))
+
+  )
+(calc-bmi 70 )

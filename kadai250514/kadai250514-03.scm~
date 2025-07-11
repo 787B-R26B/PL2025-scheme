@@ -1,0 +1,12 @@
+(define calc-thi
+  (lambda(t u) (+(*(+(* 0.81 t)(* 0.01 u))(-(* 0.99 t)14.3))46.3))
+ )
+
+(calc-thi 20 20)
+
+(define fukai
+  
+  (lambda (x)
+    (cond((> x 75)'bad)
+         (else 'good))
+    ))
