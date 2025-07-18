@@ -1,0 +1,6 @@
+(define fib2 (lambda (n)
+               (fib2-sub n 1 0)))
+(define fib2-sub (lambda (n a b)
+                   (cond ((= n 1) a)
+                         (else (fib2-sub (- n 1) (+ a b) a)))))
+(fib2 1017)
