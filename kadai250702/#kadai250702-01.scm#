@@ -1,0 +1,7 @@
+(define (tosa-1-5 n)
+  (cond ((= n 1) '(1))
+        (else
+         (let ((prev-list (tosa-1-5 (- n 1))))
+           (append prev-list
+                   (list (+ (car (last-pair prev-list)) 5)))))))
+(tosa-1-5 1)
